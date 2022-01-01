@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.courseRegController">
+   <children>
+      <BorderPane layoutX="-26.0" layoutY="-53.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="56.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton onMouseClicked="#LogOut" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to right top, #3c047c, #8e0070, #c2005b, #e04644, #eb7e31); -fx-cursor: hand;" text="Log Out" textFill="WHITE" translateX="50.0" translateY="50.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label layoutX="45.0" onMouseClicked="#openBrowser" style="-fx-cursor: hand;" text="Student Course Registration System" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/usm-ringlogo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="670.0" prefWidth="300.0" translateZ="1.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to right top, #3c047c, #8e0070, #c2005b, #e04644, #eb7e31);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#StuDashboard" prefHeight="100.0" prefWidth="350.0" style="-fx-cursor: hand;" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/monitor.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="100.0" prefWidth="350.0" style="-fx-cursor: hand;" text="Course Registration" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/edit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#ContactUs" prefHeight="100.0" prefWidth="350.0" style="-fx-cursor: hand;" text="Contact Us" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/call-center-agent.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="670.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="300.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/edit.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Course Information" translateX="10.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Text layoutX="18.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course List" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <HBox prefHeight="40.0" prefWidth="440.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0">
+                     <children>
+                        <TextField fx:id="searchCourse" onKeyTyped="#searchcourse" prefHeight="25.0" prefWidth="400.0" promptText="Search Course">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#searchcourse" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="5.0">
+                           <image>
+                              <Image url="@images/loupe.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="courseList" onKeyPressed="#courselistdetails" onMouseClicked="#courselistdetails" prefHeight="200.0" prefWidth="440.0" style="-fx-fixed-cell-size: 30;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="140.0" />
+                  <JFXButton fx:id="addCourseButton" layoutX="28.0" layoutY="344.0" onMouseClicked="#addcourse" style="-fx-background-color: #EB7E31; -fx-cursor: hand;" text="Add Course" textFill="WHITE" AnchorPane.leftAnchor="358.0" AnchorPane.topAnchor="345.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="28.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Details" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="10.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="removeCourseButton" layoutX="38.0" layoutY="354.0" onMouseClicked="#removecourse" style="-fx-background-color: #EB7E31; -fx-cursor: hand;" text="Remove Course" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fx:id="printPreview" fitHeight="25.0" fitWidth="25.0" layoutX="332.0" layoutY="333.0" onMouseClicked="#printPreview" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+                     <image>
+                        <Image url="@images/download.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="28.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registered Course" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="registeredCourse" layoutX="10.0" layoutY="10.0" onKeyPressed="#courseregistereddetails" onMouseClicked="#courseregistereddetails" prefHeight="470.0" prefWidth="420.0" style="-fx-fixed-cell-size: 30;" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="100.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="440.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="10.0">
+                     <children>
+                        <VBox prefWidth="420.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text fx:id="courseTitle" layoutX="20.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="400.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time:">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="time" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="360.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TextArea fx:id="desc" editable="false" wrapText="true">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
